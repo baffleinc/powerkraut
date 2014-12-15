@@ -9,6 +9,10 @@
 
 get_header(); ?>
 
+	<section class="hero">
+		<h1 class="logo">Powerkraut</h1>
+	</section>
+
 	<?php 
 		$site_content = $GLOBALS[ 'site_content' ];
 		foreach($site_content as $section) : 

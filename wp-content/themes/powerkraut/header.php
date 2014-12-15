@@ -52,7 +52,11 @@
 		<ul>
 			<li class="logo"><a href="#top">Powerkraut</a></li>
 			<?php foreach($menu_items as $item) : if($item->post_parent == 0) : ?>
-				<li><a href="#section-<?php echo $item->object_id; ?>"><?php echo $item->title; ?></a></li>
+				<?php if(is_front_page()) : ?>
+					<li><a href="#section-<?php echo $item->object_id; ?>"><?php echo $item->title; ?></a></li>
+				<?php else : ?>
+					<li><a href="<?php bloginfo('url'); ?>#section-<?php echo $item->object_id; ?>"><?php echo $item->title; ?></a></li>
+				<?php endif; ?> <!-- end is front page -->
 			<?php endif; endforeach; ?>
 		</ul>
 	</header>
