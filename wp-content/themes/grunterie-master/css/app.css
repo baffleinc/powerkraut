@@ -9374,48 +9374,48 @@ section .tab-content.active {
   display: block;
 }
 
-#blog-posts {
+.blog-posts {
   padding-bottom: 0;
   margin-bottom: 0;
 }
-#blog-posts header {
+.blog-posts header {
   background-image: url(../img/header-bg.png);
 }
-#blog-posts .no-bullet {
+.blog-posts .no-bullet {
   margin-bottom: 0;
 }
-#blog-posts .posts li {
+.blog-posts .posts li {
   border-bottom: 1px solid #aaa;
   transition: all .3s linear;
   background-color: #fff;
 }
-#blog-posts .posts li p {
+.blog-posts .posts li p {
   margin-bottom: 0;
 }
-#blog-posts .posts li:hover {
+.blog-posts .posts li:hover {
   background-color: #b61e44;
 }
-#blog-posts .posts li:hover a,
-#blog-posts .posts li:hover h2,
-#blog-posts .posts li:hover h3,
-#blog-posts .posts li:hover p {
+.blog-posts .posts li:hover a,
+.blog-posts .posts li:hover h2,
+.blog-posts .posts li:hover h3,
+.blog-posts .posts li:hover p {
   color: #fff;
 }
-#blog-posts .posts li a, #blog-posts .posts li h2, #blog-posts .posts li h3, #blog-posts .posts li p {
+.blog-posts .posts li a, .blog-posts .posts li h2, .blog-posts .posts li h3, .blog-posts .posts li p {
   transition: all .5s linear;
 }
-#blog-posts .posts li a {
+.blog-posts .posts li a {
   padding: 2em 0;
   display: block;
 }
-#blog-posts .posts li a h2 {
+.blog-posts .posts li a h2 {
   color: #b61e44;
 }
-#blog-posts .posts li a h3 {
+.blog-posts .posts li a h3 {
   color: #aaa;
   font-size: 18px;
 }
-#blog-posts .posts li a p {
+.blog-posts .posts li a p {
   text-transform: uppercase;
   font-weight: bold;
   font-style: normal;

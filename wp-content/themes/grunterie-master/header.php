@@ -55,7 +55,6 @@
 			<?php else : ?>
 				<li class="logo"><a href="<?php bloginfo('url'); ?>">Powerkraut</a></li>
 			<?php endif; ?>
-			
 			<?php foreach($menu_items as $item) : if($item->post_parent == 0) : ?>
 				<?php if(is_front_page()) : ?>
 					<li><a href="#section-<?php echo $item->object_id; ?>"><?php echo $item->title; ?></a></li>
@@ -63,6 +62,5 @@
 					<li><a href="<?php bloginfo('url'); ?>#section-<?php echo $item->object_id; ?>"><?php echo $item->title; ?></a></li>
 				<?php endif; ?> <!-- end is front page -->
 			<?php endif; endforeach; ?>
-			<li><a href="#blog">Blog</a></li>
 		</ul>
 	</nav>
