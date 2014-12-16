@@ -1,123 +1,100 @@
-body, html {
-  min-height: 100%;
-  background-color: #fff;
-}
+/*
+Error: Undefined mixin 'radius'.
+        on line 225 of /Users/harley/Sites/powerkraut/wp-content/themes/grunterie-master/scss/themestyles.scss, in `radius'
+        from line 225 of /Users/harley/Sites/powerkraut/wp-content/themes/grunterie-master/scss/themestyles.scss
 
-body {
-  margin-top: -5px;
-}
+220: 		}
+221: 
+222: 		[type="submit"]{
+223: 			background-color: $red;
+224: 
+225: 			@include radius();
+226: 
+227: 			&:hover{
+228: 				background-color: darken($red, 10%);
+229: 			}
+230: 		}
 
-nav {
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  z-index: 999;
-}
-nav ul.inline-list {
-  margin-bottom: 0;
-  margin-left: 20px;
-}
-nav ul.inline-list li.logo {
-  margin-right: 20px;
-}
-nav ul.inline-list li.logo a {
-  background: url(../img/logo-white.png) no-repeat center center;
-  width: 71px;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  position: relative;
-  top: 2px;
-  font-weight: bold;
-}
-nav ul.inline-list li {
-  margin-left: 0;
-}
-nav ul.inline-list li a {
-  color: #fff;
-  line-height: 100px;
-  padding: 0 20px;
-}
-nav ul.inline-list li a:hover {
-  background-color: #000;
-  color: #b61e44;
-}
-
-section.hero {
-  background: url(../img/header-bg.png) no-repeat center center;
-  background-size: cover;
-  height: 100%;
-}
-
-section {
-  min-height: 100%;
-  padding-bottom: 3em;
-}
-section header {
-  min-height: 100vh;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-section header h2 {
-  width: 200px;
-  height: 200px;
-  line-height: 200px;
-  background-color: #b61e44;
-  color: #fff;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-  top: 200px;
-}
-section ul.tabs {
-  text-align: center;
-  margin-top: -60px;
-}
-section ul.tabs li {
-  display: inline-block;
-}
-section ul.tabs li.active a {
-  background-color: #fff;
-  color: #b61e44;
-}
-section ul.tabs li a {
-  display: inline-block;
-  height: 60px;
-  padding: 10px 20px;
-  color: #fff;
-  font-weight: bold;
-}
-section .child-title {
-  color: #b61e44;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  font-size: 2rem;
-  position: relative;
-}
-section .child-title span {
-  background-color: #fff;
-  position: relative;
-  z-index: 99;
-  display: inline-block;
-  padding-right: 20px;
-}
-section .child-title:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: #aaa;
-  position: absolute;
-  top: 50%;
-}
-section .tab-content {
-  display: none;
-}
-section .tab-content.active {
-  display: block;
-}
-
-#blog-posts header {
-  background-image: url(../img/header-bg.png);
-}
+Backtrace:
+/Users/harley/Sites/powerkraut/wp-content/themes/grunterie-master/scss/themestyles.scss:225:in `radius'
+/Users/harley/Sites/powerkraut/wp-content/themes/grunterie-master/scss/themestyles.scss:225
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:98:in `block in with_mixin'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:115:in `with_frame'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:98:in `with_mixin'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:336:in `visit_mixin'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:79:in `block in with_base'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:115:in `with_frame'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:79:in `with_base'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:420:in `map'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:79:in `block in with_base'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:115:in `with_frame'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:79:in `with_base'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:420:in `map'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:79:in `block in with_base'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:115:in `with_frame'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:79:in `with_base'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:420:in `map'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:79:in `block in with_base'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:115:in `with_frame'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:79:in `with_base'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/root_node.rb:20:in `render'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/engine.rb:268:in `render'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/compass-1.0.1/lib/compass/sass_compiler.rb:40:in `compile!'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/compass-1.0.1/lib/compass/commands/update_project.rb:49:in `perform'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/compass-1.0.1/lib/compass/commands/base.rb:18:in `execute'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/compass-1.0.1/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/compass-1.0.1/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/compass-1.0.1/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/compass-1.0.1/bin/compass:30:in `block in <top (required)>'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/compass-1.0.1/bin/compass:44:in `call'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/compass-1.0.1/bin/compass:44:in `<top (required)>'
+/Users/harley/.rvm/gems/ruby-2.1.2/bin/compass:23:in `load'
+/Users/harley/.rvm/gems/ruby-2.1.2/bin/compass:23:in `<main>'
+/Users/harley/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+/Users/harley/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'radius'.\A         on line 225 of /Users/harley/Sites/powerkraut/wp-content/themes/grunterie-master/scss/themestyles.scss, in `radius'\A         from line 225 of /Users/harley/Sites/powerkraut/wp-content/themes/grunterie-master/scss/themestyles.scss\A \A 220: 		}\A 221: \A 222: 		[type=\"submit\"]{\A 223: 			background-color: $red;\A 224: \A 225: 			@include radius();\A 226: \A 227: 			&:hover{\A 228: 				background-color: darken($red, 10%);\A 229: 			}\A 230: 		}"; }

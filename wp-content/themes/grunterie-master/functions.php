@@ -10,6 +10,8 @@ anything else you may want to use plugins to keep things tidy.
 
 add_filter('show_admin_bar', '__return_false');
 
+register_sidebars(3, array('name'=>'Footer Column %d'));
+
 /*
 1. lib/clean.php
   - head cleanup

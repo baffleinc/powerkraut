@@ -70,17 +70,21 @@ section{
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
-
+ 
 		h2{
 			width: 200px;
 			height: 200px;
 			line-height: 200px;
-			background-color: $red;
-			color: #fff;
+			background-color: #fff;
+			color: #404040;
 			margin: 0 auto;
 			text-align: center;
 			position: relative;
 			top: 200px;
+
+			&.logo{
+				background-color: transparent;
+			}
 		}
 	}
 
@@ -140,7 +144,126 @@ section{
 }
 
 #blog-posts{
+	padding-bottom: 0;
+	margin-bottom: 0;
 	header{
 		background-image: url(../img/header-bg.png);
+	}
+
+	.no-bullet{
+		margin-bottom: 0;
+	}
+
+	.posts{
+		li{
+			border-bottom: 1px solid #aaa;
+			transition: all .3s linear;
+			background-color: #fff;
+
+			p{
+				margin-bottom: 0;
+			}
+
+			&:hover{
+				background-color: $red;
+				a,
+				h2,
+				h3,
+				p{
+					color: #fff;
+				}
+			}
+
+			a, h2, h3, p{
+				transition: all .5s linear;
+			}
+
+			a{
+				padding: 2em 0;
+				display: block;
+
+				h2{
+					color: $red;
+
+				}
+
+				h3{
+					color: #aaa;
+					font-size: 18px;
+				}
+
+				p{
+					text-transform: uppercase;
+					font-weight: bold;
+					font-style: normal;
+					color: #aaa;
+				}
+			}
+		}
+	}
+}
+
+footer{
+	background-color: #f6f6f6;
+	padding: 3rem inherit;
+
+	ul{
+		margin-left: 0;
+	}
+
+	.gform_wrapper{
+		li.gfield{
+			input, textarea{
+				margin-bottom: 0.5em!important;
+				width: 100%!important;
+			}
+		}
+
+		[type="submit"]{
+			background-color: $red;
+
+			@include radius();
+
+			&:hover{
+				background-color: darken($red, 10%);
+			}
+		}
+	}
+
+	.gform_footer{
+		margin-top: 0;
+	}
+
+	li{
+		list-style: none;
+	}
+}
+
+.copyright{
+	background-color: $red;
+	padding: 1em;
+	color: #fff;
+
+	p{
+		margin-bottom: 0;
+	}
+}
+
+.single-post{
+	header{
+		height: 50%;
+
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+
+	.content.row{
+		margin-top: 3em;
+		margin-bottom: 4em;
+
+		h1{
+			margin-bottom: 1em;
+		}
 	}
 }

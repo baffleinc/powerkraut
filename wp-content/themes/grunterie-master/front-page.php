@@ -11,11 +11,11 @@
 	<section id="section-<?php echo $section->ID; ?>" class="parent">
 		
 		<header style="background-image: url(<?php echo $bg_img[0]; ?>)">
-			<h2>
-				<?php if($section->post_title == 'About') : ?>
-					<img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt="">
-				<?php else : echo $section->post_title; endif; ?>
-			</h2>
+			<?php if($section->post_title == 'About') : ?>
+				<h2 class="logo"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png" alt=""></h2>
+			<?php else : ?>
+				<h2><?php echo $section->post_title; ?></h2>
+			<?php endif; ?>
 		</header>
 
 		<ul class="tabs">
@@ -58,10 +58,12 @@
 		
 		<ul class="no-bullet posts">
 			<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
-				<li class="post row">
-					<a href="<?php the_permalink(); ?>">
-						<div class="small-12 columns">
-								<?php the_title(); ?>
+				<li class="post">
+					<a class="row" href="<?php the_permalink(); ?>">
+						<div class="small-12 columns text-center">
+								<h2><?php the_title(); ?></h2>
+								<h3><?php the_field('subtitle'); ?></h3>
+								<p>Posted on <?php the_time('d.m.Y'); ?></p>
 						</div>
 					</a>
 				</li>

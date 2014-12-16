@@ -9316,12 +9316,15 @@ section header h2 {
   width: 200px;
   height: 200px;
   line-height: 200px;
-  background-color: #b61e44;
-  color: #fff;
+  background-color: #fff;
+  color: #404040;
   margin: 0 auto;
   text-align: center;
   position: relative;
   top: 200px;
+}
+section header h2.logo {
+  background-color: transparent;
 }
 section ul.tabs {
   text-align: center;
@@ -9371,6 +9374,98 @@ section .tab-content.active {
   display: block;
 }
 
+#blog-posts {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
 #blog-posts header {
   background-image: url(../img/header-bg.png);
+}
+#blog-posts .no-bullet {
+  margin-bottom: 0;
+}
+#blog-posts .posts li {
+  border-bottom: 1px solid #aaa;
+  transition: all .3s linear;
+  background-color: #fff;
+}
+#blog-posts .posts li p {
+  margin-bottom: 0;
+}
+#blog-posts .posts li:hover {
+  background-color: #b61e44;
+}
+#blog-posts .posts li:hover a,
+#blog-posts .posts li:hover h2,
+#blog-posts .posts li:hover h3,
+#blog-posts .posts li:hover p {
+  color: #fff;
+}
+#blog-posts .posts li a, #blog-posts .posts li h2, #blog-posts .posts li h3, #blog-posts .posts li p {
+  transition: all .5s linear;
+}
+#blog-posts .posts li a {
+  padding: 2em 0;
+  display: block;
+}
+#blog-posts .posts li a h2 {
+  color: #b61e44;
+}
+#blog-posts .posts li a h3 {
+  color: #aaa;
+  font-size: 18px;
+}
+#blog-posts .posts li a p {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: normal;
+  color: #aaa;
+}
+
+footer {
+  background-color: #f6f6f6;
+  padding: 3rem inherit;
+}
+footer ul {
+  margin-left: 0;
+}
+footer .gform_wrapper li.gfield input, footer .gform_wrapper li.gfield textarea {
+  margin-bottom: 0.5em !important;
+  width: 100% !important;
+}
+footer .gform_wrapper [type="submit"] {
+  background-color: #b61e44;
+  border-radius: 4px;
+}
+footer .gform_wrapper [type="submit"]:hover {
+  background-color: #8a1734;
+}
+footer .gform_footer {
+  margin-top: 0;
+}
+footer li {
+  list-style: none;
+}
+
+.copyright {
+  background-color: #b61e44;
+  padding: 1em;
+  color: #fff;
+}
+.copyright p {
+  margin-bottom: 0;
+}
+
+.single-post header {
+  height: 50%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.single-post .content.row {
+  margin-top: 3em;
+  margin-bottom: 4em;
+}
+.single-post .content.row h1 {
+  margin-bottom: 1em;
 }

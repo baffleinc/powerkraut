@@ -1,21 +1,24 @@
 <footer>
 	<div class="row">
 		<div class="small-12 medium-4 columns">
-			<h3>Get in touch</h3>
+			<?php dynamic_sidebar('Footer Column 1'); ?>
 		</div>
 
 		<div class="small-12 medium-4 columns">
-			<h3>Subscribe to newsletter</h3>
+			<?php dynamic_sidebar('Footer Column 2'); ?>
 		</div>
 
 		<div class="small-12 medium-4 columns last">
-			<h3>Something else</h3>
+			<?php dynamic_sidebar('Footer Column 3'); ?>
 		</div>
 	</div>
+</footer>
+
+<div class="copyright">
 	<div class="row">
 		<div class="small-12 columns"><p>&copy; powerkraut 2014 All Rights Reserved</p></div>
 	</div>
-</footer>
+</div>
 
 
 <?php wp_footer(); ?>
