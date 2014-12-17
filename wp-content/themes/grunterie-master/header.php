@@ -20,6 +20,8 @@
 	<link rel="apple-touch-startup-image" href="<?php echo get_template_directory_uri(); ?>/img/devices/reverie-load-ipad-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
 	<!-- Startup Image iPhone (320x460) -->
 	<link rel="apple-touch-startup-image" href="<?php echo get_template_directory_uri(); ?>/img/devices/reverie-load.png" media="screen and (max-device-width: 320px)" />
+
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <?php wp_head(); ?>
 </head>
 <body <?php body_class('antialiased'); ?> itemscope="itemscope" itemtype="http://schema.org/WebPage">
@@ -57,10 +59,18 @@
 			<?php endif; ?>
 			<?php foreach($menu_items as $item) : if($item->post_parent == 0) : ?>
 				<?php if(is_front_page()) : ?>
-					<li><a href="#section-<?php echo $item->object_id; ?>"><?php echo $item->title; ?></a></li>
+					<li><a href="#<?php echo sanitize_title($item->title); ?>"><?php echo $item->title; ?></a></li>
 				<?php else : ?>
-					<li><a href="<?php bloginfo('url'); ?>#section-<?php echo $item->object_id; ?>"><?php echo $item->title; ?></a></li>
+					<li><a href="<?php bloginfo('url'); ?>#<?php echo sanitize_title($item->title); ?>"><?php echo $item->title; ?></a></li>
 				<?php endif; ?> <!-- end is front page -->
 			<?php endif; endforeach; ?>
 		</ul>
+
+
+		<ul class="right social inline-list">
+			<li class="facebook"><a href="<?php the_field('facebook_url', 'option'); ?>"><i class="fa fa-facebook"></i></a></li>
+			<li class="twitter"><a href="<?php the_field('twitter_url', 'option'); ?>"><i class="fa fa-twitter"></i></a></li>
+		</ul>
+
+		<a href="#openmobilemenu" class="mobile-menu show-for-small"><i class="fa fa-bars"></i></a>
 	</nav>

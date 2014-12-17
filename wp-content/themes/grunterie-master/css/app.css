@@ -9264,9 +9264,34 @@ nav {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
+  height: 100px;
   z-index: 999;
 }
+nav a {
+  transition: all .3s linear;
+}
+nav .social {
+  margin-top: 25px;
+  margin-right: 25px;
+}
+nav .social li {
+  margin-left: 1em !important;
+}
+nav .social a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px !important;
+  text-align: center;
+}
+nav .social .facebook a {
+  background-color: #3B5998;
+}
+nav .social .twitter a {
+  background-color: #55acee;
+}
 nav ul.inline-list {
+  float: left;
   margin-bottom: 0;
   margin-left: 20px;
 }
@@ -9281,7 +9306,7 @@ nav ul.inline-list li.logo a {
   overflow: hidden;
   position: relative;
   top: 2px;
-  font-weight: bold;
+  font-weight: 500;
 }
 nav ul.inline-list li {
   margin-left: 0;
@@ -9293,7 +9318,7 @@ nav ul.inline-list li a {
 }
 nav ul.inline-list li a:hover {
   background-color: #000;
-  color: #b61e44;
+  color: #e3577a;
 }
 
 section.hero {
@@ -9302,28 +9327,56 @@ section.hero {
   height: 100%;
 }
 
+dl.tabs {
+  border-bottom: 4px solid #b61e44;
+  padding-left: 1em;
+}
+dl.tabs dd {
+  position: relative;
+  top: 4px;
+}
+dl.tabs dd a {
+  background-color: #fff;
+  border: 1px solid #b61e44;
+  border-bottom-width: 4px;
+  color: #b61e44;
+  font-weight: bold;
+}
+dl.tabs dd a:hover {
+  background-color: #8a1734;
+}
+dl.tabs dd.active a {
+  background-color: #b61e44;
+  color: #fff;
+}
+
+div.tabs-content {
+  padding: 0 1em;
+}
+
 section {
   min-height: 100%;
   padding-bottom: 3em;
 }
 section header {
+  margin: 0;
   min-height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-section header h2 {
-  width: 200px;
-  height: 200px;
-  line-height: 200px;
-  background-color: #fff;
-  color: #404040;
+section header h1 {
+  width: 350px;
+  height: 350px;
+  line-height: 350px;
+  background-color: #b61e44;
+  color: #fff;
   margin: 0 auto;
   text-align: center;
   position: relative;
   top: 200px;
 }
-section header h2.logo {
+section header h1.logo {
   background-color: transparent;
 }
 section ul.tabs {

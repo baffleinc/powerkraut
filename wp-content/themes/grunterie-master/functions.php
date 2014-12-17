@@ -12,6 +12,16 @@ add_filter('show_admin_bar', '__return_false');
 
 register_sidebars(3, array('name'=>'Footer Column %d'));
 
+if (class_exists('MultiPostThumbnails')) {
+    new MultiPostThumbnails(
+        array(
+            'label' => 'Secondary Image',
+            'id' => 'secondary-image',
+            'post_type' => 'page'
+        )
+    );
+}
+
 /*
 1. lib/clean.php
   - head cleanup

@@ -1,4 +1,6 @@
 $red: #b61e44;
+$twitter: #55acee;
+$facebook: #3B5998;
 
 body, html{
 	min-height: 100%;
@@ -13,9 +15,39 @@ nav{
 	position: fixed;
 	background-color: rgba(0,0,0,0.7);
 	width: 100%;
+	height: 100px;
 	z-index: 999;
+
+	a{
+		transition: all .3s linear;
+	}
+
+	.social{
+		margin-top: 25px;
+		margin-right: 25px;
+
+		li{
+			margin-left: 1em!important;
+		}
+		a{
+			display: inline-block;
+			width: 50px;
+			height: 50px;
+			line-height: 50px!important;
+			text-align: center;
+		}
+
+		.facebook a{
+			background-color: $facebook;
+		}
+
+		.twitter a{
+			background-color: $twitter;
+		}
+	}
 	
 	ul.inline-list{
+		float: left;
 		margin-bottom: 0;
 		margin-left: 20px;
 
@@ -32,7 +64,7 @@ nav{
 				position: relative;
 				top: 2px;
 
-				font-weight: bold;
+				font-weight: 500;
 
 			}
 		} 
@@ -46,7 +78,7 @@ nav{
 
 				&:hover{
 					background-color: #000;
-					color: $red;
+					color: lighten($red, 20%);
 				}
 			}
 		}
@@ -60,23 +92,55 @@ section.hero{
 	height: 100%;
 }
 
+dl.tabs{
+
+	border-bottom: 4px solid $red;
+	padding-left: 1em;
+
+	dd{
+		position: relative;
+		top: 4px;
+		a{
+			background-color: #fff;
+			border: 1px solid $red;
+			border-bottom-width: 4px;
+			color: $red;
+			font-weight: bold;
+
+			&:hover{
+				background-color: darken($red, 10%);
+			}
+		}
+	
+		&.active a{
+			background-color: $red;
+			color: #fff;
+		}
+	}
+}
+
+div.tabs-content{
+	padding: 0 1em;
+}
+
 section{
 
 	min-height: 100%;
 	padding-bottom: 3em;
 
 	header{
+		margin: 0;
 		min-height: 100vh;
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
  
-		h2{
-			width: 200px;
-			height: 200px;
-			line-height: 200px;
-			background-color: #fff;
-			color: #404040;
+		h1{
+			width: 350px;
+			height: 350px;
+			line-height: 350px;
+			background-color: $red;
+			color: #fff;
 			margin: 0 auto;
 			text-align: center;
 			position: relative;
