@@ -60,7 +60,15 @@
 	?>
 
 	<nav>
-		<ul class="inline-list">
+		<ul class="show-for-small inline-list">
+			<?php if(is_front_page()) : ?>
+					<li class="show-for-small logo"><a href="#top">Powerkraut</a></li>
+				<?php else : ?>
+					<li class="show-for-small logo"><a href="<?php bloginfo('url'); ?>">Powerkraut</a></li>
+				<?php endif; ?>
+		</ul>
+		
+		<ul class="inline-list main-menu">
 			<?php if(is_front_page()) : ?>
 				<li class="logo"><a href="#top">Powerkraut</a></li>
 			<?php else : ?>
@@ -73,12 +81,16 @@
 					<li><a href="<?php bloginfo('url'); ?>#<?php echo sanitize_title($item->title); ?>"><?php echo $item->title; ?></a></li>
 				<?php endif; ?> <!-- end is front page -->
 			<?php endif; endforeach; ?>
+			<li class="social show-for-small">
+				<a class="facebook" href="<?php the_field('facebook_url', 'option'); ?>"><i class="fa fa-facebook"></i></a>
+				<a class="instagram" href="<?php the_field('instagram_url', 'option'); ?>"><i class="fa fa-instagram"></i></a>
+			</li>
 		</ul>
 
 
 		<ul class="right social inline-list">
 			<li class="facebook"><a href="<?php the_field('facebook_url', 'option'); ?>"><i class="fa fa-facebook"></i></a></li>
-			<li class="twitter"><a href="<?php the_field('twitter_url', 'option'); ?>"><i class="fa fa-twitter"></i></a></li>
+			<li class="instagram"><a href="<?php the_field('instagram_url', 'option'); ?>"><i class="fa fa-instagram"></i></a></li>
 		</ul>
 
 		<a href="#openmobilemenu" class="mobile-menu show-for-small"><i class="fa fa-bars"></i></a>

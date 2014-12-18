@@ -49,7 +49,12 @@
 							$feat_image = wp_get_attachment_image_src( get_post_thumbnail_id( $child->ID ), 'original' );
 				 ?>
 
-					<h2 class="show-for-small"><?php echo $child->post_title; ?></h2>
+					<h2 class="toggle-accordion show-for-small <?php if($i==0) echo 'active' ?>">
+						<a href="#<?php echo sanitize_title($child->post_title); ?>"><?php echo $child->post_title; ?>
+							<i class="fa fa-plus"></i>
+							<span class="clearfix"></span>
+						</a>
+					</h2>
 
 					<div class="tab-content row <?php if($i==0) echo 'active' ?>" id="<?php echo sanitize_title($child->post_title); ?>">
 

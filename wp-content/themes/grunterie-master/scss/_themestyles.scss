@@ -1,5 +1,8 @@
+
+
 $red: #b61e44;
 $twitter: #55acee;
+$instagram: #3f6d93;
 $facebook: #3B5998;
 
 body, html{
@@ -43,6 +46,10 @@ nav{
 
 		.twitter a{
 			background-color: $twitter;
+		}
+
+		.instagram a{
+			background-color: $instagram;
 		}
 	}
 	
@@ -280,11 +287,11 @@ footer{
 
 		li{
 			background-color: #f6f6f6;
-			padding: 1em 3em;
+			padding: 2em 3em;
 		}
 	}
 
-	.gform_wrapper{
+	.gform_wrapper{ 
 		li.gfield{
 			input, textarea{
 				margin-bottom: 0.5em!important;
@@ -351,6 +358,133 @@ footer{
 			color: #fff;
 			background-color: $red;
 			font-weight: bold;
+		}
+	}
+}
+
+@media #{$small-only}{
+
+	body.lock{
+		overflow: hidden;
+	}
+
+	ul.social{
+		display: none;
+	}
+
+	ul.main-menu{
+		background-color: rgba(0,0,0,0.9);
+		margin-left: 0!important;
+		width: 100%;
+		position: fixed;
+		top: 95px; left: 0; right: 0; bottom: 0;
+		height: 1px;
+		transition: all .5s ease-out;
+		overflow: hidden;
+
+		&.visible{
+			height: auto;
+		}
+
+		li{
+			display: block;
+			float: none;
+
+			&.logo{
+				display: none;
+			}
+
+			&.social{
+				a{
+					margin-left: 1em;
+					width: 50px;
+					height: 50px;
+					line-height: 50px;
+					text-align: center;
+
+					&.facebook{
+						background-color: $facebook;
+					}
+
+					&.instagram{
+						background-color: $instagram;
+					}
+				}
+			}
+
+			a{
+				padding: inherit 1em;
+
+				line-height: 50px!important;
+				border-bottom: 1px solid rgba(255,255,255,0.1);
+			}
+		}
+	}
+
+	.mobile-menu{
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		color: #fff;
+		font-size: 24px;
+		color: #fff;
+		float: right;
+		margin-right: 20px;
+		margin-top: 25px;
+
+		&:active,
+		&:hover{
+			color: $red;
+		}
+	}
+
+	section{
+		header{
+			h1.logo{
+				width: 200px;
+				top: 150px;
+			}
+
+			h1{
+				width: 200px;
+				height: 200px;
+				line-height: 200px;
+				font-size: 24px;
+			}
+		}
+
+		ul.tabs{
+			display: none;
+		}
+
+		h2.toggle-accordion{
+			font-size: 18px;
+			min-height: 50px;
+			border-bottom: 1px solid #eee;
+			a{
+				display: block;
+				@include grid-column(12);
+				line-height: 50px;
+				color: $red;
+				position: relative;
+				padding-right: 50px;
+
+				i{
+					position: absolute;
+					top: 0; 
+					right: 0;
+					width: 50px;
+					text-align: center;
+					display: block;
+					line-height: 50px;
+				}
+			}
+		}
+
+		.tab-content{
+			margin-top: 2em;
+			font-size: 16px;
 		}
 	}
 }

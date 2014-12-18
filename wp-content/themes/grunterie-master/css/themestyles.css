@@ -1,61 +1,27 @@
 /*
-Error: Undefined mixin 'radius'.
-        on line 298 of /Users/harley/Sites/powerkraut/wp-content/themes/grunterie-master/scss/themestyles.scss, in `radius'
-        from line 298 of /Users/harley/Sites/powerkraut/wp-content/themes/grunterie-master/scss/themestyles.scss
+Error: File to import not found or unreadable: functions.
+       Load paths:
+         /Users/harley/Sites/powerkraut/wp-content/themes/grunterie-master/bower_components/foundation/scss
+         /Users/harley/Sites/powerkraut/wp-content/themes/grunterie-master/bower_components/foundation/scss
+         Compass::SpriteImporter
+         /Users/harley/Sites/powerkraut/wp-content/themes/grunterie-master/scss
+         /Users/harley/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets
+        on line 1 of /Users/harley/Sites/powerkraut/wp-content/themes/grunterie-master/scss/themestyles.scss
 
-293: 		}
-294: 
-295: 		[type="submit"]{
-296: 			background-color: $red;
-297: 
-298: 			@include radius();
-299: 
-300: 			&:hover{
-301: 				background-color: darken($red, 10%);
-302: 			}
-303: 		}
+1: @import "functions";
+2: 
+3: $red: #b61e44;
+4: $twitter: #55acee;
+5: $instagram: #3f6d93;
+6: $facebook: #3B5998;
 
 Backtrace:
-/Users/harley/Sites/powerkraut/wp-content/themes/grunterie-master/scss/themestyles.scss:298:in `radius'
-/Users/harley/Sites/powerkraut/wp-content/themes/grunterie-master/scss/themestyles.scss:298
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:98:in `block in with_mixin'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:115:in `with_frame'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:98:in `with_mixin'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:336:in `visit_mixin'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:79:in `block in with_base'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:115:in `with_frame'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:79:in `with_base'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:420:in `map'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:79:in `block in with_base'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:115:in `with_frame'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:79:in `with_base'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:420:in `map'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:79:in `block in with_base'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:115:in `with_frame'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:79:in `with_base'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:420:in `map'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+/Users/harley/Sites/powerkraut/wp-content/themes/grunterie-master/scss/themestyles.scss:1
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/import_node.rb:66:in `rescue in import'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/import_node.rb:45:in `import'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:301:in `visit_import'
 /Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /Users/harley/.rvm/gems/ruby-2.1.2/gems/sass-3.4.3/lib/sass/stack.rb:79:in `block in with_base'
@@ -97,4 +63,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'radius'.\A         on line 298 of /Users/harley/Sites/powerkraut/wp-content/themes/grunterie-master/scss/themestyles.scss, in `radius'\A         from line 298 of /Users/harley/Sites/powerkraut/wp-content/themes/grunterie-master/scss/themestyles.scss\A \A 293: 		}\A 294: \A 295: 		[type=\"submit\"]{\A 296: 			background-color: $red;\A 297: \A 298: 			@include radius();\A 299: \A 300: 			&:hover{\A 301: 				background-color: darken($red, 10%);\A 302: 			}\A 303: 		}"; }
+  content: "Error: File to import not found or unreadable: functions.\A        Load paths:\A          /Users/harley/Sites/powerkraut/wp-content/themes/grunterie-master/bower_components/foundation/scss\A          /Users/harley/Sites/powerkraut/wp-content/themes/grunterie-master/bower_components/foundation/scss\A          Compass::SpriteImporter\A          /Users/harley/Sites/powerkraut/wp-content/themes/grunterie-master/scss\A          /Users/harley/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.1/stylesheets\A         on line 1 of /Users/harley/Sites/powerkraut/wp-content/themes/grunterie-master/scss/themestyles.scss\A \A 1: @import \"functions\";\A 2: \A 3: $red: #b61e44;\A 4: $twitter: #55acee;\A 5: $instagram: #3f6d93;\A 6: $facebook: #3B5998;"; }

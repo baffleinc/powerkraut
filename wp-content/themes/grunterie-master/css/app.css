@@ -9290,6 +9290,9 @@ nav .social .facebook a {
 nav .social .twitter a {
   background-color: #55acee;
 }
+nav .social .instagram a {
+  background-color: #3f6d93;
+}
 nav ul.inline-list {
   float: left;
   margin-bottom: 0;
@@ -9487,7 +9490,7 @@ footer ul {
 }
 footer ul li {
   background-color: #f6f6f6;
-  padding: 1em 3em;
+  padding: 2em 3em;
 }
 footer .gform_wrapper li.gfield input, footer .gform_wrapper li.gfield textarea {
   margin-bottom: 0.5em !important;
@@ -9539,4 +9542,115 @@ footer li {
   color: #fff;
   background-color: #b61e44;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 36em) {
+  body.lock {
+    overflow: hidden;
+  }
+
+  ul.social {
+    display: none;
+  }
+
+  ul.main-menu {
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-left: 0 !important;
+    width: 100%;
+    position: fixed;
+    top: 95px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    transition: all .5s ease-out;
+    overflow: hidden;
+  }
+  ul.main-menu.visible {
+    height: auto;
+  }
+  ul.main-menu li {
+    display: block;
+    float: none;
+  }
+  ul.main-menu li.logo {
+    display: none;
+  }
+  ul.main-menu li.social a {
+    margin-left: 1em;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+  }
+  ul.main-menu li.social a.facebook {
+    background-color: #3B5998;
+  }
+  ul.main-menu li.social a.instagram {
+    background-color: #3f6d93;
+  }
+  ul.main-menu li a {
+    padding: inherit 1em;
+    line-height: 50px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .mobile-menu {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    color: #fff;
+    float: right;
+    margin-right: 20px;
+    margin-top: 25px;
+  }
+  .mobile-menu:active, .mobile-menu:hover {
+    color: #b61e44;
+  }
+
+  section header h1.logo {
+    width: 200px;
+    top: 150px;
+  }
+  section header h1 {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    font-size: 24px;
+  }
+  section ul.tabs {
+    display: none;
+  }
+  section h2.toggle-accordion {
+    font-size: 18px;
+    min-height: 50px;
+    border-bottom: 1px solid #eee;
+  }
+  section h2.toggle-accordion a {
+    display: block;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 100%;
+    float: left;
+    line-height: 50px;
+    color: #b61e44;
+    position: relative;
+    padding-right: 50px;
+  }
+  section h2.toggle-accordion a i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    text-align: center;
+    display: block;
+    line-height: 50px;
+  }
+  section .tab-content {
+    margin-top: 2em;
+    font-size: 16px;
+  }
 }
