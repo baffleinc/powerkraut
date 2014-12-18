@@ -9359,7 +9359,7 @@ section {
   padding-bottom: 3em;
 }
 section header {
-  margin: 0;
+  margin-bottom: 0 !important;
   min-height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
@@ -9478,9 +9478,16 @@ section .tab-content.active {
 footer {
   background-color: #f6f6f6;
   padding: 3rem inherit;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 footer ul {
   margin-left: 0;
+}
+footer ul li {
+  background-color: #f6f6f6;
+  padding: 1em 3em;
 }
 footer .gform_wrapper li.gfield input, footer .gform_wrapper li.gfield textarea {
   margin-bottom: 0.5em !important;
@@ -9521,4 +9528,15 @@ footer li {
 }
 .single-post .content.row h1 {
   margin-bottom: 1em;
+}
+.single-post .nav {
+  margin-bottom: 2em;
+}
+.single-post .nav a {
+  display: block;
+  width: 50%;
+  padding: 2em 3em;
+  color: #fff;
+  background-color: #b61e44;
+  font-weight: bold;
 }

@@ -13,9 +13,11 @@
 			<?php the_content(); ?>
 
 			<div class="nav">
-				<?php previous_post_link(); ?>
-				<?php next_post_link(); ?>
+				<?php previous_post_link('%link', '<i class="fa fa-arrow-left"></i> %title'); ?>
+				<?php next_post_link('%link', '%title <i class="fa fa-arrow-right"></i>'); ?>
 			</div>
+
+			<div class="fb-comments" data-width="100%" data-numposts="5" data-colorscheme="light" data-href="<?php the_permalink(); ?>"></div>
 		</div>
 	</div>
 

@@ -1,15 +1,12 @@
-<footer>
+<footer style="background-image: url(<?php echo the_field('footer_background', 'option'); ?>);">
 	<div class="row">
-		<div class="small-12 medium-4 columns">
-			<?php dynamic_sidebar('Footer Column 1'); ?>
+		<div class="small-12 medium-6 columns">
+			<ul><?php dynamic_sidebar('Footer Column 1'); ?></ul>
+			
 		</div>
 
-		<div class="small-12 medium-4 columns">
-			<?php dynamic_sidebar('Footer Column 2'); ?>
-		</div>
-
-		<div class="small-12 medium-4 columns last">
-			<?php dynamic_sidebar('Footer Column 3'); ?>
+		<div class="small-12 medium-6 columns">
+			<ul><?php dynamic_sidebar('Footer Column 2'); ?></ul>
 		</div>
 	</div>
 </footer>

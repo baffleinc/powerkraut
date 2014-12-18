@@ -129,7 +129,7 @@ section{
 	padding-bottom: 3em;
 
 	header{
-		margin: 0;
+		margin-bottom: 0!important;
 		min-height: 100vh;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -271,8 +271,17 @@ footer{
 	background-color: #f6f6f6;
 	padding: 3rem inherit;
 
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
 	ul{
 		margin-left: 0;
+
+		li{
+			background-color: #f6f6f6;
+			padding: 1em 3em;
+		}
 	}
 
 	.gform_wrapper{
@@ -328,6 +337,20 @@ footer{
 
 		h1{
 			margin-bottom: 1em;
+		}
+	}
+
+	.nav{
+
+		margin-bottom: 2em;
+
+		a{
+			display: block;
+			width: 50%;
+			padding: 2em 3em;
+			color: #fff;
+			background-color: $red;
+			font-weight: bold;
 		}
 	}
 }
