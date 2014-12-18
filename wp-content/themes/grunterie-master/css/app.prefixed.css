@@ -9257,6 +9257,7 @@ nav ul.inline-list li.logo {
 }
 nav ul.inline-list li.logo a {
   background: url(../img/logo-white.png) no-repeat center center;
+  background-size: 71px;
   width: 71px;
   text-indent: 100%;
   white-space: nowrap;
