@@ -9262,7 +9262,7 @@ body {
 
 nav {
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   width: 100%;
   height: 100px;
   z-index: 999;
@@ -9554,7 +9554,7 @@ footer li {
   }
 
   ul.main-menu {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     margin-left: 0 !important;
     width: 100%;
     position: fixed;
@@ -9577,6 +9577,7 @@ footer li {
     display: none;
   }
   ul.main-menu li.social a {
+    font-weight: bold;
     margin-left: 1em;
     width: 50px;
     height: 50px;
@@ -9652,5 +9653,11 @@ footer li {
   section .tab-content {
     margin-top: 2em;
     font-size: 16px;
+  }
+  section dl.tabs {
+    padding-left: 0;
+  }
+  section dl.tabs dd {
+    width: 100%;
   }
 }

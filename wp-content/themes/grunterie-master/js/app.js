@@ -28,7 +28,7 @@
 			var target = $(this).attr('href');
 			var current = $(this).parent().hasClass('active');
 
-			scope.find('.active').removeClass('active');
+			scope.find('.tab-content.active, h2.accordion-toggle.active').removeClass('active');
 
 			if(!current){
 				$(this).parent().addClass('active');
@@ -42,10 +42,14 @@
 					scrollTop: st - 100
 				}, 1000);
 			}
-
-
-
 		});
+
+		$('.main-menu li a').on('click', function(){
+
+			if(!$('.mobile-menu').is(':visible')) return;
+
+			$('.main-menu').removeClass('visible');
+		})
 
 
 		$('nav a[href*=#]:not([href=#])').click(function() {
