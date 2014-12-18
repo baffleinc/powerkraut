@@ -28,6 +28,8 @@
 			var target = $(this).attr('href');
 			var current = $(this).parent().hasClass('active');
 
+			console.log(current);
+
 			scope.find('.tab-content.active, h2.accordion-toggle.active').removeClass('active');
 
 			if(!current){
@@ -36,12 +38,14 @@
 
 				var st = $(this).parent().offset().top;
 
-				console.log(st);
-
 				$('html,body').animate({
 					scrollTop: st - 100
 				}, 1000);
+			} else {
+				$(this).parent().removeClass('active');
 			}
+
+			
 		});
 
 		$('.main-menu li a').on('click', function(){
@@ -49,6 +53,8 @@
 			if(!$('.mobile-menu').is(':visible')) return;
 
 			$('.main-menu').removeClass('visible');
+			$('body').removeClass('lock');
+			$('.mobile-menu i').toggleClass('fa-farrow-up fa-bars');
 		})
 
 
