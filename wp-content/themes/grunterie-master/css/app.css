@@ -9654,6 +9654,10 @@ footer li {
     margin-top: 2em;
     font-size: 16px;
   }
+  section .tabs-content {
+    border: 1px solid #b61e44;
+    border-top: none;
+  }
   section dl.tabs {
     padding-left: 0;
   }

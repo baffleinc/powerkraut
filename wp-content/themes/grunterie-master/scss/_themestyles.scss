@@ -488,6 +488,11 @@ footer{
 			font-size: 16px;
 		}
 
+		.tabs-content{
+			border: 1px solid $red;
+			border-top: none;
+		}
+
 		dl.tabs{
 			padding-left: 0;
 
