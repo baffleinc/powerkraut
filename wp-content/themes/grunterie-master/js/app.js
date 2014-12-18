@@ -28,9 +28,7 @@
 			var target = $(this).attr('href');
 			var current = $(this).parent().hasClass('active');
 
-			console.log(current);
-
-			scope.find('.tab-content.active, h2.accordion-toggle.active').removeClass('active');
+			scope.find('.tab-content.active, h2.accordion-toggle.active').removeClass('active').find('i').toggleClass('fa-plus fa-minus');
 
 			if(!current){
 				$(this).parent().addClass('active');
@@ -45,6 +43,7 @@
 				$(this).parent().removeClass('active');
 			}
 
+			$(this).find('i').toggleClass('fa-plus fa-minus');
 			
 		});
 

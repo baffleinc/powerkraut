@@ -51,7 +51,7 @@
 
 					<h2 class="toggle-accordion show-for-small <?php if($i==0) echo 'active' ?>">
 						<a href="#<?php echo sanitize_title($child->post_title); ?>"><?php echo $child->post_title; ?>
-							<i class="fa fa-plus"></i>
+							<i class="fa <?php if($i==0) echo 'fa-minus'; else echo 'fa-plus'; ?>"></i>
 							<span class="clearfix"></span>
 						</a>
 					</h2>

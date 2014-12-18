@@ -25,6 +25,7 @@ module.exports = function(grunt) {
      * Uncomment this section to use compass
      */
 
+
     uglify: {
       options: {
         mangle: false
@@ -57,10 +58,20 @@ module.exports = function(grunt) {
       }
     },
 
+    autoprefixer: {
+      options: {
+        // Task-specific options go here.
+      },
+      your_target: {
+        src: 'css/app.css',
+        dest: 'css/app.prefixed.css'
+      },
+    },
+
     watch: {
       grunt: {
         files: ['Gruntfile.js', 'scss/**', 'css/**', 'js/**'],
-        tasks: ['compass:dist', 'jshint:grunt'],
+        tasks: ['compass:dist', 'jshint:grunt', 'autoprefixer'],
         options: {
           livereload: true,
         },
