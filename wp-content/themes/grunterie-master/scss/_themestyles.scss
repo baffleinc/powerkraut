@@ -146,10 +146,12 @@ section{
 		@media screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1) {
 			// iphone 3g only
 			height: 250px;
-		}
+			min-height: 0;
+		} 
 
 		@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 			height: 768px; 
+			min-height: 0;
 		}
  
 		h1{

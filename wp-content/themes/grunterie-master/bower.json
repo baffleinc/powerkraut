@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "private": "true",
   "dependencies": {
-    "foundation": "zurb/bower-foundation",
-    "viewport-units-buggyfill": "~0.4.1"
+    "foundation": "zurb/bower-foundation"
   }
 }
