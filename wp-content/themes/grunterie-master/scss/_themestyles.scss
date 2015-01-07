@@ -142,6 +142,15 @@ section{
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
+
+		@media screen and (device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1) {
+			// iphone 3g only
+			background-size: normal;
+		}
+
+		@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+			background-size: normal;
+		}
  
 		h1{
 			width: 350px;
@@ -152,7 +161,7 @@ section{
 			margin: 0 auto;
 			text-align: center;
 			position: relative;
-			top: 200px;
+			top: 200px; 
 
 			&.logo{
 				background-color: transparent;
