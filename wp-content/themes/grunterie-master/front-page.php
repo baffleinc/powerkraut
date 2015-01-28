@@ -62,7 +62,7 @@
 							<h2 class="child-title"><span><?php the_field('subtitle', $child->ID); ?></span></h2>
 						</div>
 
-						<div class="small-12 medium-6 medium-push-6 columns">
+						<!-- <div class="small-12 medium-6 medium-push-6 columns">
 							<img src="<?php echo $feat_image[0]; ?>" alt=""><br><br>
 							<?php if (class_exists('MultiPostThumbnails')) :
 							    MultiPostThumbnails::the_post_thumbnail(
@@ -71,9 +71,10 @@
 							        $child->ID
 							    );
 							endif; ?>
-						</div>
+						</div> -->
 
-						<div class="small-12 medium-6 medium-pull-6 columns">
+						<!-- <div class="small-12 medium-6 medium-pull-6 columns"> -->
+						<div class="small-12 columns">
 							<?php echo do_shortcode(wpautop($child->post_content)); ?>	
 						</div>
 
